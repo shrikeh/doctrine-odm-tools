@@ -4,11 +4,11 @@
     "homepage": "http://popshack.com",
     "authors": [
         {
-            "name": "PopsShack",
-            "email": "dev@popshack.com"
+            "name": "Barney Hanlon",
+            "email": "barney@shrikeh.net"
         }
     ],
-    "description": "Simple ODM for PopShack",
+    "description": "Tools and Traits for common Doctrine tasks",
     "require" : {
         "php": ">=5.4.1"
     },
