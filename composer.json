@@ -21,7 +21,8 @@
         "shrink/phpcpd": "dev-master",
         "zerkalica/php-code-browser": "dev-master",
         "phpmd/phpmd" : ">=1.4.0",
-        "squizlabs/php_codesniffer": "1.*"
+        "squizlabs/php_codesniffer": "1.*",
+        "theseer/phpdox": "*"
     },
     "autoload": {
         "psr-0": {
