@@ -1,0 +1,33 @@
+{
+    "name": "shrikeh/doctrine-tools",
+    "type": "library",
+    "homepage": "http://popshack.com",
+    "authors": [
+        {
+            "name": "PopsShack",
+            "email": "dev@popshack.com"
+        }
+    ],
+    "description": "Simple ODM for PopShack",
+    "require" : {
+        "php": ">=5.4.1"
+    },
+    "require-dev" : {
+        "pimple/pimple": "1.*",
+        "doctrine/mongodb-odm": "1.0.0-BETA8",
+        "phpunit/phpunit": ">=3.7.1",
+        "phploc/phploc": ">=1.7.4",
+        "pdepend/pdepend": "*",
+        "shrink/phpcpd": "dev-master",
+        "zerkalica/php-code-browser": "dev-master",
+        "phpmd/phpmd" : ">=1.4.0",
+        "squizlabs/php_codesniffer": "1.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Shrikeh\\Tests\\DoctrineTools": "tests",
+            "Shrikeh\\DoctrineTools": "src"
+        }
+    },
+    "minimum-stability": "dev"
+}
