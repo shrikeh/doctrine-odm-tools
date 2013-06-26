@@ -3,23 +3,23 @@ namespace Shrikeh\Tests\DoctrineTools\Mapper;
 
 use \DateTime;
 use \Shrikeh\Tests\DoctrineTools\TestAbstract;
-use \Shrikeh\DoctrineTools\Mapper\Interfaces\DateCreated;
+use \Shrikeh\DoctrineTools\Mapper\Interfaces\LastModified;
 use \Shrikeh\Tests\DoctrineTools\Stubs\Mapper\ModifiedCreated;
 
-class DateCreatedTest extends TestAbstract
+class LastModifiedTest extends TestAbstract
 {
-    public function testSetCreated()
+    public function testSetLastModified()
     {
         $stub = new ModifiedCreated;
 
         $this->assertTrue(
-            $stub instanceof DateCreated,
+            $stub instanceof LastModified,
            'The stub does not implement the required interface'
         );
 
         $dateTime = new DateTime();
 
-        $stub->setDateCreated($dateTime);
-        $this->assertSame($dateTime, $stub->getDateCreated());
+        $stub->setLastModified($dateTime);
+        $this->assertSame($dateTime, $stub->getLastModified());
     }
 }

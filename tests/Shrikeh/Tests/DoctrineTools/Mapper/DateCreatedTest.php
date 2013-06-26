@@ -6,9 +6,9 @@ use \Shrikeh\Tests\DoctrineTools\TestAbstract;
 use \Shrikeh\DoctrineTools\Mapper\Interfaces\DateCreated;
 use \Shrikeh\Tests\DoctrineTools\Stubs\Mapper\ModifiedCreated;
 
-class LastModifiedTest extends TestAbstract
+class DateCreatedTest extends TestAbstract
 {
-    public function testSetLastModified()
+    public function testSetCreated()
     {
         $stub = new ModifiedCreated;
 
@@ -18,7 +18,8 @@ class LastModifiedTest extends TestAbstract
         );
 
         $dateTime = new DateTime();
-        $stub->setLastModified($dateTime);
-        $this->assertSame($dateTime, $stub->getLastModified());
+
+        $stub->setDateCreated($dateTime);
+        $this->assertSame($dateTime, $stub->getDateCreated());
     }
 }
